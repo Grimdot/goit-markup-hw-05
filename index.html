@@ -31,7 +31,7 @@
               <a href="./portfolio.html" class="link active-link header-link"> Портфоліо</a>
             </li>
             <li class="nav-item">
-              <a href="./test.html" class="link active-link header-link">Контакти</a>
+              <a href="" class="link active-link header-link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="btn hero-btn">Замовити послугу</button>
+          <button data-modal-open type="button" class="btn hero-btn">Замовити послугу</button>
         </div>
       </section>
 
@@ -124,14 +124,7 @@
           <ul class="list about-list">
             <li class="about-item">
               <img src="./images/img-1.jpg" alt="Сотрудник пишет код" width="370" height="294" />
-            </li>
-            <li class="about-item">
-              <img
-                src="./images/img-2.jpg"
-                alt="Сотрудник занимается дизайном"
-                width="370"
-                height="294"
-              />
+              <p class="about-content">Десктопні додатки</p>
             </li>
             <li class="about-item">
               <img
@@ -140,6 +133,16 @@
                 width="370"
                 height="294"
               />
+              <p class="about-content">Мобільні додатки</p>
+            </li>
+            <li class="about-item">
+              <img
+                src="./images/img-2.jpg"
+                alt="Сотрудник занимается дизайном"
+                width="370"
+                height="294"
+              />
+              <p class="about-content">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -446,6 +449,16 @@
           </ul>
         </div>
       </section>
+
+      <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+          <button data-modal-close type="button" class="btn modal-close">
+            <svg class="close-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -538,5 +551,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
